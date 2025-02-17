@@ -1,8 +1,8 @@
 -- 1. Crear la base de datos
-CREATE DATABASE igloolab_sql_db;
+CREATE DATABASE igloobal_test_db;
 
 -- 2. Conectarse a la base de datos creada 
-\c igloolab_sql_db;
+\c igloobal_test_db;
 
 -- 3. Crear la tabla products
 CREATE TABLE products (
