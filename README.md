@@ -1,4 +1,4 @@
-# Igloolab Test Backend
+# Igloobal Test Backend
 
 Este repositorio corresponde a una API REST diseñada para la gestión de productos farmacéuticos, desarrollada con **Node.js**, **TypeScript** y **TypeORM**, y conectada a **PostgreSQL**.
 
@@ -25,7 +25,7 @@ Este repositorio corresponde a una API REST diseñada para la gestión de produc
 1. Clonar este repositorio (o descargar el archivo ZIP y descomprimirlo):
    ```bash
    git clone https://github.com/SneiderFuentes/igloobal-test-backend.git
-   cd igloolab-test-backend
+   cd igloobal-test-backend
 
 3. Crear el archivo .env en la raíz del proyecto (donde se encuentra package.json), con las credenciales correspondientes a PostgreSQL. A modo de ejemplo:
     ```bash
@@ -33,7 +33,7 @@ Este repositorio corresponde a una API REST diseñada para la gestión de produc
     DB_PORT=5432
     DB_USER=postgres
     DB_PASS=password
-    DB_NAME=igloolab_test_db
+    DB_NAME=igloobal_test_db
     PORT=3000
 
 5. Instalar dependencias:
