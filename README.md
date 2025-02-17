@@ -41,7 +41,7 @@ Este repositorio corresponde a una API REST diseñada para la gestión de produc
    npm install
 
 ## Creación de la base de datos
-
+1.   **Usar migraciones y seed de TypeORM**
 En PostgreSQL, antes de ejecutar el proyecto, se sugiere crear la base de datos definida en el .env. Esto puede hacerse con pgAdmin o desde la consola:
   ```bash
   psql -U postgres
@@ -72,6 +72,22 @@ Para insertar registros iniciales (por ejemplo, productos farmacéuticos de prue
    ```
 
 Este script ejecuta directamente el archivo src/seeds/product.seeder.ts mediante ts-node, sin necesidad de compilar previamente.
+
+2.   **Usar script SQL**
+   ```bash
+   scripts\database\setup_db.sql
+   ```
+   Este script:
+
+      -Crea la base de datos.
+      -Se conecta a la base de datos con \c.
+      -Crea la tabla products.
+      -Inserta varios productos de ejemplo.
+      
+Para ejecutarlo se utiliza este comando
+   ```bash
+   psql -U postgres -f scripts/database/setup_db.sql
+   ```
 
 ## Modos de ejecución
 
